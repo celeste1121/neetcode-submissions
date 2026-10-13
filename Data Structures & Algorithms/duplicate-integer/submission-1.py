@@ -1,0 +1,10 @@
+# use set to find the length of unique value 
+# compare the the length of nums
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        if len(set(nums)) == len(nums):
+            return False;
+        else:
+            return True;
+# time: O(n) traversing the nums to create set
+# space: O(n) store in set
